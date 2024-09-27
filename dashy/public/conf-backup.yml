@@ -1,0 +1,113 @@
+# partage d'image : https://imgbb.com/
+# Configuration de l'application
+---
+pages:
+  - name: OSINT
+    path: 'osint.yml'
+  - name: Veille
+    path: 'veille.yml'
+
+
+pageInfo:
+  title: Bienvenue
+  logo: 'https://i.ibb.co/fGnr01r/astro-dab.png'
+  centeredTitle: true  # Indicateur pour centrer le titre
+
+appConfig:
+  theme: glass  # Définir le thème de l'application
+  customCss: |
+    /* Styles personnalisés */
+    @media (min-width: 1780px) {
+      /* Pour les écrans larges, configurez le nombre de colonnes */
+      .home .item-group-container:not(.item-size-large) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .home .item-group-container.item-size-large .item-group-grid,
+    .home .item-group-container.orientation-vertical .item-group-grid {
+      display: flex !important;  /* Force l'affichage en flex pour certaines conteneurs */
+    }
+    /* Centrage du titre */
+    .page-title {
+      text-align: center;  /* Centre le titre */
+    }
+
+  auth:
+    enableGuestAccess: true  # Activé l'accès invité 
+    users:
+    - user: boss  # Utilisateur administrateur
+      hash: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918  # Hash du mot de passe
+      type: admin  # Type d'utilisateur
+
+
+
+  webSearch:
+    searchEngine: 'duckduckgo'  # Moteur de recherche par défaut
+    openingMethod: 'newtab'  # Ouvrir les résultats dans un nouvel onglet
+
+  enableErrorReporting: true  # Activer le rapport d'erreurs pour faciliter le débogage
+  allowConfigEdit: false  # Interdire la modification des configurations par les utilisateurs
+  enableFontAwesome: true  # Activer Font Awesome pour les icônes
+  fontAwesomeKey: 2e949c5bf4  # Clé API pour Font Awesome
+  faviconApi: faviconkit  # API pour récupérer les favicons
+  workspaceLandingUrl: https://dashy.to  # URL de destination du tableau de bord
+  enableMultiTasking: false  # Désactiver le multitâche
+
+sections:
+- name: Les petites info de la journée !  # Nom de la section
+  icon: far fa-smile-beam  # Icône de la section
+  displayData:
+    collapsed: false  # Afficher la section dépliée par défaut
+    hideForGuests: false  # Ne pas cacher cette section pour les invités
+  widgets:
+  - type: clock  # Afficher l'horloge
+  - type: weather  # Widget météo
+    options:
+      apiKey: efdbade728b37086877a5e83442004db  # Clé API pour le service météo
+      city: Toulouse  # Ville pour la météo
+  - type: crypto-watch-list  # Widget de suivi des cryptomonnaies
+    options:
+      currency: USD  # Afficher les prix des cryptomonnaies en euros
+      sortBy: marketCap  # Trier les cryptomonnaies par capitalisation boursière
+      assets:
+      - bitcoin  # Liste des actifs à suivre
+      - ethereum
+      - monero
+      - solana
+      - gala
+
+
+- name: Productivité et réseaux
+  icon: far fa-briefcase
+  items:
+  - title: ProtonMail
+    icon: favicon
+    url: https://mail.protonmail.com/
+    description: Primary email account
+    tags: [hosted, personal, email, mail]
+  - title: GitHub
+    icon: favicon
+    url: https://github.com/
+  - title: Hack the Box
+    icon: favicon
+    url: https://www.hackthebox.com/home
+  - title: TryHackMe
+    icon: si-tryhackme
+    url: https://https://tryhackme.com/
+  - title: Discord
+    icon: si-discord
+    url: https://discord.com/channels/
+  - title: Reddit
+    icon: si-reddit
+    url: https://www.reddit.com/
+  - title: Twitter
+    icon: si-twitter
+    url: https://twitter.com/
+  - title: YouTube
+    icon: si-youtube
+    url: https://youtube.com/
+
+---
+
+
+

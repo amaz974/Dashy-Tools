@@ -1,0 +1,173 @@
+---
+pages:
+  - name: home
+    path: 'conf.yml'
+
+pageInfo:
+  title: 🔎 Bienvenue sur la page de veille 🧐
+  navLinks:
+    - title: Home
+      path: /
+
+############################################################################################-THE HACKERS NEWS-#######################################################
+sections:
+  - name: The Hackers News  # Section pour The Hackers News
+    icon: fas fa-newspaper  # Icône de la section
+    displayData:
+      collapsed: false
+      hideForGuests: false
+      customStyles: 'font-size: 35px;'  # Augmentation de la taille du titre
+    widgets:
+      - type: rss-feed
+        options:
+          rssUrl: 'https://feeds.feedburner.com/TheHackersNews'
+          limit: 5
+          orderBy: pubDate
+          orderDirection: desc
+
+
+
+############################################################################################-THREATPOST-#######################################################
+
+
+  - name: Threatpost  # Section pour Threatpost
+    icon: fas fa-bolt  # Icône de la section
+    displayData:
+      collapsed: false
+      hideForGuests: false
+      customStyles: 'font-size: 35px;'  # Augmentation de la taille du titre
+    widgets:
+      - type: rss-feed
+        options:
+          rssUrl: 'https://threatpost.com/feed/'
+          limit: 5
+          orderBy: pubDate
+          orderDirection: desc
+
+  - name: Krebs on Security  # Section pour Krebs on Security
+    icon: fas fa-shield-alt  # Icône de la section
+    displayData:
+      collapsed: false
+      hideForGuests: false
+      customStyles: 'font-size: 35px;'  # Augmentation de la taille du titre
+    widgets:
+      - type: rss-feed
+        options:
+          rssUrl: 'https://krebsonsecurity.com/feed/'
+          limit: 5
+          orderBy: pubDate
+          orderDirection: desc
+        
+
+  - name: Bruce Schneier Blog  # Section pour Bruce Schneier's Blog
+    icon: fas fa-lock  # Icône de la section
+    displayData:
+      collapsed: false
+      hideForGuests: false
+      customStyles: 'font-size: 35px;'  # Augmentation de la taille du titre
+    widgets:
+      - type: rss-feed
+        options:
+          rssUrl: 'https://www.schneier.com/blog/atom.xml'
+          limit: 3
+          orderBy: pubDate
+          orderDirection: desc
+
+
+
+
+  - name: Dark Reading  # Section pour Dark Reading
+    icon: fas fa-glasses  # Icône de la section
+    displayData:
+      collapsed: false
+      hideForGuests: false
+      customStyles: 'font-size: 35px;'  # Augmentation de la taille du titre
+    widgets:
+      - type: rss-feed
+        options:
+          rssUrl: 'https://www.darkreading.com/rss.xml'
+          limit: 5
+          orderBy: pubDate
+          orderDirection: desc
+
+  - name: Bleeping Computer  # Section pour Bleeping Computer
+    icon: fas fa-laptop  # Icône de la section
+    displayData:
+      collapsed: false
+      hideForGuests: false
+      customStyles: 'font-size: 35px;'  # Augmentation de la taille du titre
+    widgets:
+      - type: rss-feed
+        options:
+          rssUrl: 'https://www.bleepingcomputer.com/feed/'
+          limit: 5
+          orderBy: pubDate
+          orderDirection: desc
+
+############################################################################################-Economie-#######################################################
+
+
+  - name: Économie  # Section for economy news
+    icon: fas fa-chart-line
+    displayData:
+      collapsed: true  # Collapsed by default (hidden)
+      hideForGuests: false
+      customStyles: 'font-size: 25px;'  # Augmentation de la taille du titre
+    widgets:
+      - type: news-headlines
+        options:
+          apiKey: bDzhnvIMETR3EPcKEivXWoRU9Y-aabeS17nyEerwrkkeJfKc
+          category: economy
+          lang: fr
+          count: 5  # Limit to 5 articles
+
+############################################################################################-SPORT-#######################################################
+
+  - name: Résultats Sportifs  # Section Title
+    icon: fas fa-futbol  # Section Icon for sports
+    displayData:
+      collapsed: true  # Section displayed open by default
+      hideForGuests: true  # Section visible to guests
+      customStyles: 'font-size: 20px;'  # Augmentation de la taille du titre
+    widgets:
+      - type: sports-scores  # Type of widget for sports scores
+        options:
+          teamId: 133714
+          pastOrFuture: past  # Show past results (you can set to future for upcoming matches)
+          limit: 2  # Limit results to 10 matches
+          hideImage: false  # Display team/match banner images
+
+
+############################################################################################-TECHNOLOGIE-#######################################################
+
+  - name: Technologie  # Section for geopolitics and technology
+    icon: fas fa-newspaper
+    displayData:
+      collapsed: true  # Collapsed by default (hidden)
+      hideForGuests: false
+      customStyles: 'font-size: 25px;'  # Augmentation de la taille du titre
+    widgets:
+      - type: news-headlines
+        options:
+          apiKey: bDzhnvIMETR3EPcKEivXWoRU9Y-aabeS17nyEerwrkkeJfKc
+          category: technology
+          lang: fr
+          count: 5  # Limit to 5 articles
+
+############################################################################################-POLITIQUE-#######################################################
+
+  - name: Politique  # Section for politics news
+    icon: fas fa-landmark
+    displayData:
+      collapsed: true  # Collapsed by default (hidden)
+      hideForGuests: false
+      customStyles: 'font-size: 25px;'  # Augmentation de la taille du titre
+    widgets:
+      - type: news-headlines
+        options:
+          apiKey: bDzhnvIMETR3EPcKEivXWoRU9Y-aabeS17nyEerwrkkeJfKc
+          category: politics
+          lang: fr
+          count: 5  # Limit to 5 articles
+
+############################################################################################-ECONOMIE-#######################################################

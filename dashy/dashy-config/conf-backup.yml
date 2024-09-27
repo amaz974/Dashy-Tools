@@ -1,0 +1,277 @@
+pages:
+  - name: OSINT
+    path: osint.yml
+  - name: Veille
+    path: veille.yml
+pageInfo:
+  title: Salut Amaz974 ! 🌟
+  logo: https://i.ibb.co/fGnr01r/astro-dab.png
+  centeredTitle: true
+appConfig:
+  theme: glass
+  backgroundImg: https://i.ibb.co/6PgQ2Dk/fdecran4.jpg
+  customCss: |
+    /* Styles personnalisés */
+    @media (min-width: 1780px) {
+      /* Pour les écrans larges, configurez le nombre de colonnes */
+      .home .item-group-container:not(.item-size-large) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .home .item-group-container.item-size-large .item-group-grid,
+    .home .item-group-container.orientation-vertical .item-group-grid {
+      display: flex !important;  /* Force l'affichage en flex pour certaines conteneurs */
+    }
+    /* Centrage du titre */
+    .page-title {
+      text-align: center;  /* Centre le titre */
+    }
+
+    /* Couleurs personnalisées pour le thème "glass" */
+    :root {
+      --primary: #fff;
+      --background: #313941;
+      --background-darker: #190842;
+    }
+  auth:
+    enableGuestAccess: true
+    users:
+      - user: boss
+        hash: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+        type: admin
+  webSearch:
+    searchEngine: duckduckgo
+    openingMethod: newtab
+  enableErrorReporting: true
+  allowConfigEdit: false
+  enableFontAwesome: true
+  fontAwesomeKey: 2e949c5bf4
+  faviconApi: faviconkit
+  workspaceLandingUrl: https://dashy.to
+  enableMultiTasking: false
+  layout: auto
+  iconSize: medium
+  customColors:
+    glass:
+      primary: '#fff'
+      background: '#313941'
+      background-darker: '#190842'
+      info: '#04e4f4'
+      success: '#20e253'
+      warning: '#f6f000'
+      error: '#fca016'
+      danger: '#f80363'
+      neutral: '#272f4d'
+      white: '#fff'
+      black: '#000'
+      item-group-background: transparent
+      medium-grey: '#5e6474'
+      item-background: rgba(96,125,139,0.2)
+      item-background-hover: rgba(96,125,139,0.30196078431372547)
+      transparent-70: rgba(0,0,0,0.7019607843137254)
+      transparent-50: rgba(0,0,0,0.5019607843137255)
+      transparent-30: rgba(0,0,0,0.30196078431372547)
+      transparent-white-70: hsla(0,0%,100%,0.7019607843137254)
+      transparent-white-50: hsla(0,0%,100%,0.5019607843137255)
+      transparent-white-30: hsla(0,0%,100%,0.30196078431372547)
+      transparent-white-10: hsla(0,0%,100%,0.058823529411764705)
+      heading-text-color: '#fff'
+      nav-link-text-color: '#fff'
+      nav-link-background-color: rgba(96,125,139,0.2)
+      nav-link-text-color-hover: '#fff'
+      nav-link-background-color-hover: rgba(96,125,139,0.2)
+      nav-link-border-color: transparent
+      nav-link-border-color-hover: '#fff'
+      nav-link-shadow: '1px 1px 2px #232323'
+      nav-link-shadow-hover: '1px 1px 2px #232323'
+      item-text-color: '#fff'
+      item-text-color-hover: '#fff'
+      item-group-outer-background: rgba(0,0,0,0.25)
+      item-group-heading-text-color: '#fff'
+      item-group-heading-text-color-hover: hsla(0,0%,100%,0.8392156862745098)
+      settings-text-color: '#fff'
+      settings-background: transparent
+      config-settings-color: '#fff'
+      config-settings-background: rgba(22,7,61,0.8901960784313725)
+      config-code-color: '#313941'
+      config-code-background: '#fff'
+      code-editor-color: '#000'
+      code-editor-background: '#fff'
+      widget-text-color: '#fff'
+      widget-background-color: '#190842'
+      widget-accent-color: '#313941'
+      widget-base-background: transparent
+      interactive-editor-color: '#fff'
+      interactive-editor-background: '#313941'
+      interactive-editor-background-darker: '#190842'
+      cloud-backup-color: '#fff'
+      cloud-backup-background: rgba(22,7,61,0.8901960784313725)
+      search-container-background: transparent
+      search-field-background: '#313941'
+      search-label-color: '#fff'
+      footer-text-color: '#5e6474'
+      footer-text-color-link: '#fff'
+      footer-background: '#190842'
+      context-menu-background: '#313941'
+      context-menu-color: '#fff'
+      context-menu-secondary-color: '#190842'
+      side-bar-background: '#190842'
+      side-bar-background-lighter: '#313941'
+      side-bar-color: '#fff'
+      side-bar-item-background: '#190842'
+      side-bar-item-color: '#fff'
+      workspace-web-content-background: '#313941'
+      minimal-view-background-color: transparent
+      minimal-view-title-color: '#fff'
+      minimal-view-settings-color: '#fff'
+      minimal-view-section-heading-color: hsla(0,0%,100%,0.15)
+      minimal-view-section-heading-background: hsla(0,0%,100%,0.15)
+      minimal-view-search-background: '#190842'
+      minimal-view-search-color: '#fff'
+      minimal-view-group-color: '#fff'
+      minimal-view-group-background: hsla(0,0%,100%,0.15)
+      login-form-color: '#fff'
+      login-form-background: '#313941'
+      login-form-background-secondary: '#190842'
+      about-page-color: '#fff'
+      about-page-background: '#313941'
+      about-page-accent: '#fff'
+      scroll-bar-color: '#fff'
+      scroll-bar-background: '#190842'
+      highlight-color: '#313941'
+      highlight-background: '#fff'
+      progress-bar: '#fff'
+      loading-screen-color: '#fff'
+      loading-screen-background: '#313941'
+      status-check-tooltip-background: '#190842'
+      status-check-tooltip-color: '#fff'
+      welcome-popup-background: '#190842'
+      welcome-popup-text-color: '#fff'
+      toast-background: '#fff'
+      toast-color: '#313941'
+      description-tooltip-background: '#190842'
+      description-tooltip-color: '#fff'
+      outline-color: none
+      curve-factor: 5px
+      curve-factor-navbar: 16px
+      curve-factor-small: 2px
+      dimming-factor: '0.7'
+      scroll-bar-width: 8px
+      header-height: 6.3rem
+      footer-height: 79px
+      item-group-padding: 5px
+      item-shadow: '1px 1px 2px #130f23'
+      item-hover-shadow: '1px 2px 4px #373737'
+      item-icon-transform: drop-shadow(2px 4px 6px rgba(0,0,0,0.5019607843137255)) saturate(0.95)
+      item-icon-transform-hover: drop-shadow(4px 8px 3px rgba(0,0,0,0.5019607843137255)) saturate(2)
+      item-group-shadow: 5px 2px 20px rgba(0,0,0,0.5)
+      context-menu-shadow: '1px 1px 2px #130f23'
+      section-max-height: 3000px
+      settings-container-shadow: none
+      side-bar-width: 3.5rem
+      tooltip-arrow-size: 6px
+      tooltip-width: 250px
+      tooltip-padding: 0.2rem
+      font-body: '"Roboto","Segoe UI","Ariel","sans-serif"'
+      font-headings: '"Segoe UI","Ariel","sans-serif"'
+      font-monospace: '"PTMono","Courier New",monospace'
+sections:
+  - name: Les petites info de la journée !
+    icon: far fa-smile-beam
+    displayData:
+      collapsed: false
+      hideForGuests: false
+    widgets:
+      - type: clock
+        id: 0_3009_clock
+      - type: weather
+        options:
+          apiKey: efdbade728b37086877a5e83442004db
+          city: Paris
+        id: 1_3009_weather
+      - type: crypto-watch-list
+        options:
+          currency: USD
+          sortBy: marketCap
+          assets:
+            - bitcoin
+            - ethereum
+            - monero
+            - solana
+            - gala
+        id: 2_3009_cryptowatchlist
+    filteredItems: []
+  - name: null
+    widgets:
+      - type: image
+        options:
+          imagePath: https://i.ibb.co/zXqp12j/logo.png
+        id: 0_2285_image
+    filteredItems: []
+  - name: Productivité et réseaux
+    icon: far fa-briefcase
+    displayData:
+      cols: 1
+      collapsed: false
+      itemSize: large
+    items:
+      - &ref_0
+        title: ProtonMail
+        icon: favicon
+        url: https://mail.protonmail.com/
+        tags:
+          - hosted
+          - personal
+          - email
+          - mail
+        id: 0_2592_protonmail
+      - &ref_1
+        title: GitHub
+        icon: favicon
+        url: https://github.com/
+        id: 1_2592_github
+      - &ref_2
+        title: Hack the Box
+        icon: favicon
+        url: https://www.hackthebox.com/home
+        id: 2_2592_hackthebox
+      - &ref_3
+        title: TryHackMe
+        icon: si-tryhackme
+        url: https://tryhackme.com/
+        id: 3_2592_tryhackme
+      - &ref_4
+        title: Discord
+        icon: favicon
+        url: https://discord.com/channels/
+        id: 4_2592_discord
+      - &ref_5
+        title: Reddit
+        icon: favicon
+        url: https://www.reddit.com/
+        id: 5_2592_reddit
+      - &ref_6
+        title: Twitter
+        icon: favicon
+        url: https://twitter.com/
+        id: 6_2592_twitter
+      - &ref_7
+        title: YouTube
+        icon: favicon
+        url: https://youtube.com/
+        id: 7_2592_youtube
+      - &ref_8
+        title: Linkedin
+        icon: favicon
+        url: https://linkedin.com/
+        id: 8_2592_linkedin
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
+      - *ref_4
+      - *ref_5
+      - *ref_6
+      - *ref_7
+      - *ref_8

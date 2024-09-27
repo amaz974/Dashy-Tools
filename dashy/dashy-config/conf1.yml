@@ -1,0 +1,27 @@
+---
+pages:
+  - name: OSINT
+    path: 'osint.yml'
+  - name: Veille
+    path: 'veille.yml'
+
+pageInfo:
+  title: Dashboard
+  navLinks:
+    - title: Home
+      path: /
+
+
+appConfig:
+  routingMode: hash
+  theme: one-dark
+  fontAwesomeKey: 13014ae648
+  enableFontAwesome: true
+
+sections:
+  - name: Productivity
+    items:
+      - title: ProtonMail
+        description: Secure Encrypted Email
+        icon: favicon
+        url: https://mail.protonmail.com/

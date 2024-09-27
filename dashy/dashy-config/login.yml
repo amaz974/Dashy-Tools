@@ -1,0 +1,33 @@
+# Fichier de configuration pour la page de connexion
+---
+pageInfo:
+  title: Connexion
+  logo: 'https://i.ibb.co/fGnr01r/astro-dab.png'  # Logo à afficher sur la page
+
+form:
+  action: '/authenticate'  # URL vers laquelle le formulaire est envoyé pour l'authentification
+  method: 'POST'  # Méthode HTTP à utiliser pour envoyer le formulaire
+  fields:
+    - label: 'Nom d’utilisateur'
+      type: 'text'
+      name: 'username'
+      required: true  # Champ obligatoire
+    - label: 'Mot de passe'
+      type: 'password'
+      name: 'password'
+      required: true  # Champ obligatoire
+  submit:
+    label: 'Se connecter'  # Texte du bouton de soumission
+
+messages:
+  success: 'Connexion réussie !'  # Message à afficher après une connexion réussie
+  error: 'Nom d’utilisateur ou mot de passe incorrect.'  # Message à afficher en cas d'erreur
+
+# Optionnel : Ajout d'un lien pour réinitialiser le mot de passe ou s'inscrire
+links:
+  forgotPassword: 
+    label: 'Mot de passe oublié ?'
+    url: '/reset-password'  # URL vers la page de réinitialisation de mot de passe
+  register:
+    label: 'Créer un compte'
+    url: '/register'  # URL vers la page d'inscription

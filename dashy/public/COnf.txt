@@ -1,0 +1,131 @@
+# Vaporware
+# Tiger
+# Thebe
+# Dashy Docs
+
+#Glass
+#Glass2
+#Neomorphic
+appConfig:
+  displayData:
+    showDescription: true
+
+pageInfo:
+  title: SOC Tools Dashboard
+
+sections:
+  - name: Hash Information
+    icon: fas fa-hashtag
+    items:
+      - title: VirusTotal
+        description: Analyze and check hash values
+        icon: fas fa-file
+        url: https://www.virustotal.com
+      - title: Hybrid Analysis
+        description: Malware analysis and hash information
+        icon: fas fa-database
+        url: https://www.hybrid-analysis.com
+      - title: CyberChef
+        description: Cyber operations and command analysis
+        icon: fas fa-cogs
+        url: https://gchq.github.io/CyberChef
+
+  - name: IP Information
+    icon: fas fa-network-wired
+    items:
+      - title: AbuseIPDB
+        description: Report and lookup IP addresses
+        icon: fas fa-shield-alt
+        url: https://www.abuseipdb.com
+      - title: Shodan
+        description: Search engine for internet-connected devices
+        icon: fas fa-search
+        url: https://www.shodan.io
+      - title: IPVoid
+        description: IP reputation and blacklist check
+        icon: fas fa-ban
+        url: https://www.ipvoid.com
+      - title: IPinfo
+        description: IP address information
+        icon: fas fa-info-circle
+        url: https://ipinfo.io
+      - title: AlienVault OTX
+        description: Open Threat Exchange
+        icon: fas fa-network-wired
+        url: https://otx.alienvault.com
+      - title: CyberGordon
+        description: Threat intelligence and analysis
+        icon: fas fa-eye
+        url: https://cybergordon.com
+
+  - name: Domain Information
+    icon: fas fa-globe
+    items:
+      - title: WHOIS
+        description: Domain registration information
+        icon: fas fa-info-circle
+        url: https://www.whois.com
+      - title: VirusTotal (Domains)
+        description: Domain reputation and information
+        icon: fas fa-link
+        url: https://www.virustotal.com/gui/home/upload
+      - title: DNSDumpster
+        description: DNS reconnaissance and domain info
+        icon: fas fa-search
+        url: https://dnsdumpster.com
+      - title: URL Scan
+        description: Scan URLs for security
+        icon: fas fa-search
+        url: https://urlscan.io
+      - title: Palo Alto Networks URL Filtering
+        description: URL filtering and security
+        icon: fas fa-filter
+        url: https://urlfiltering.paloaltonetworks.com/query/
+
+  - name: Event Logs and Command 
+    icon: fas fa-terminal
+    items:
+      - title: Windows Security
+        description: Comprehensive encyclopedia of Windows security event logs
+        icon: fas fa-book
+        url: https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/
+      - title: Explainshell
+        description: Explain shell commands
+        icon: fas fa-terminal
+        url: https://explainshell.com/
+
+  - name: Scripts
+    icon: fas fa-file-code
+    items:
+      - title: GitHub Security Scripts
+        description: Collection of security scripts on GitHub
+        icon: fab fa-github
+        url: https://github.com/topics/security-scripts
+      - title: Exploit Database
+        description: Search for exploits and security scripts
+        icon: fas fa-bug
+        url: https://www.exploit-db.com
+
+  - name: Security Tools
+    icon: fas fa-shield-alt
+    items:
+      - title: SquareX
+        description: Open links and files securely (Sandbox extension chrome)
+        icon: fas fa-lock
+        url: https://www.sqrx.com
+      - title: Browserling
+        description: Cross-browser testing and secure browsing
+        icon: fas fa-globe
+        url: https://www.browserling.com
+      - title: Thalos
+        description: Threat intelligence and analysis
+        icon: fas fa-eye
+        url: https://thalos.com
+      - title: Mail Header Analyzer
+        description: Analyze email headers
+        icon: fas fa-envelope
+        url: https://mailheader.org
+      - title: MHA
+        description: Mail header analyzer
+        icon: fas fa-envelope
+        url: https://mha.azurewebsites.net

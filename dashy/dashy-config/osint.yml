@@ -1,0 +1,507 @@
+---
+pages:
+  - name: home
+    path: 'conf.yml'
+pageInfo:
+  title: 🔎 Bienvenue sur la page d'OSINT 🧐
+  navLinks:
+    - title: Home
+      path: /
+
+
+sections:
+# Recherche d'information  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+- name: Recherche d'informations (Collecte)
+  icon: fas fa-search
+  displayData:
+    cols: 1
+    collapsed: false
+    itemSize: medium
+  items:
+  - title: Shodan
+    icon: favicon
+    url: https://www.shodan.io/
+    description: "Moteur de recherche pour les appareils connectés à Internet, permettant d'explorer les données d'IoT et de sécurité."
+
+  - title: Censys
+    icon: favicon
+    url: https://censys.io/
+    description: "Outil qui collecte et analyse les informations sur les hôtes connectés à Internet, utile pour la recherche en sécurité."
+
+  - title: Zoomeye
+    icon: favicon
+    url: https://www.zoomeye.org/
+    description: "Moteur de recherche dédié à l'exploration des appareils et services connectés à Internet, similaire à Shodan."
+
+  - title: FOFA
+    icon: favicon
+    url: https://fofa.info/
+    description: "Moteur de recherche permettant de découvrir des actifs numériques exposés sur Internet."
+
+  - title: PublicWWW
+    icon: favicon
+    url: https://publicwww.com/
+    description: "Outil de recherche pour trouver des codes sources et des actifs web publics en ligne."
+
+  - title: Wayback Machine
+    icon: favicon
+    url: https://archive.org/web/
+    description: "Service qui archive des pages web et permet de consulter des versions antérieures de sites Internet."
+
+  - title: Intelx.io
+    icon: favicon
+    url: https://intelx.io/
+    description: "Plateforme OSINT pour la recherche d'informations sur les données exposées et les violations."
+
+  - title: BuiltWith
+    icon: favicon
+    url: https://builtwith.com/
+    description: "Outil pour découvrir les technologies utilisées par les sites web, y compris les frameworks, CMS, et services de marketing."
+
+
+# Analyse de domaines / IP  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+- name: Analyse de domaines / IP
+  icon: fas fa-network-wired
+  displayData:
+    cols: 1
+    collapsed: false
+    itemSize: medium
+  items:
+  - title: Cybergordon
+    icon: favicon
+    url: https://cybergordon.com/
+    description: "Outil puissant pour l'analyse et la recherche d'informations sur les adresses IP et les noms de domaine."
+  
+  - title: IPinfo
+    icon: favicon
+    url: https://ipinfo.io/
+    description: "Fournit des détails sur les adresses IP, y compris la géolocalisation, l'opérateur et le réseau."
+  
+  - title: AbuseIPDB
+    icon: favicon
+    url: https://www.abuseipdb.com/
+    description: "Base de données communautaire permettant de signaler et de vérifier les adresses IP malveillantes."
+  
+  - title: URLScan
+    icon: favicon
+    url: https://urlscan.io/
+    description: "Service qui analyse des sites web pour détecter des menaces de sécurité et fournit une analyse détaillée."
+  
+  - title: IPVoid
+    icon: favicon
+    url: https://www.ipvoid.com/
+    description: "Outil pour scanner une adresse IP et vérifier sa réputation à travers diverses bases de données."
+  
+  - title: AlienVault OTX
+    icon: favicon
+    url: https://otx.alienvault.com/
+    description: "Plateforme de partage d'informations sur les menaces pour analyser les IP et les domaines."
+  
+  - title: ViewDNS
+    icon: favicon
+    url: https://viewdns.info/
+    description: "Service offrant divers outils DNS pour analyser les noms de domaine, notamment les requêtes WHOIS et les recherches DNS inverses."
+  
+  - title: Whois
+    icon: favicon
+    url: https://whois.domaintools.com/
+    description: "Service de base permettant d'obtenir des informations sur l'enregistrement de noms de domaine."
+  
+  - title: Palo Alto URL Filtering
+    icon: favicon
+    url: https://urlfiltering.paloaltonetworks.com/query/
+    description: "Outil de filtrage des URL proposé par Palo Alto Networks, permettant de vérifier la catégorisation des URL."
+  
+  - title: Talos Intelligence
+    icon: favicon
+    url: https://talosintelligence.com/
+    description: "Service de Cisco offrant des informations sur les menaces, incluant la réputation des domaines, IP et e-mails."
+
+
+# Recherche de noms d'utilisateur / Email  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- name: Recherche de noms d'utilisateur / Email
+  icon: fas fa-user
+  displayData:
+    cols: 1
+    collapsed: false
+    itemSize: medium
+
+  items:
+  - title: SpinXO
+    icon: favicon
+    url: https://www.spinxo.com/
+    description: "Générateur de noms d'utilisateur qui vous aide à créer des options uniques en fonction de vos intérêts."
+
+  - title: UsernameGenerator
+    icon: favicon
+    url: https://usernamegenerator.com/
+    description: "Outil en ligne pour générer des noms d'utilisateur basés sur des mots-clés ou des critères spécifiques."
+
+  - title: Sherlock
+    icon: favicon
+    url: https://github.com/sherlock-project/sherlock
+    description: "Outil open source pour rechercher des noms d'utilisateur sur diverses plateformes en ligne."
+
+  - title: Knowem
+    icon: favicon
+    url: https://knowem.com/
+    description: "Vérifie la disponibilité des noms d'utilisateur sur des centaines de réseaux sociaux."
+
+  - title: Social Searcher
+    icon: favicon
+    url: https://www.social-searcher.com/
+    description: "Moteur de recherche pour médias sociaux permettant de rechercher des mots-clés ou des noms d'utilisateur."
+
+  - title: idcrawl
+    icon: favicon
+    url: https://idcrawl.com/
+    description: "Outil pour rechercher des informations publiques sur les utilisateurs en ligne."
+
+  - title: h8mail
+    icon: favicon
+    url: https://github.com/khast3x/h8mail
+    description: "Outil OSINT pour rechercher des violations d'emails et effectuer des recherches à partir d'adresses email."
+
+  - title: VoilaNorbert
+    icon: favicon
+    url: https://www.voilanorbert.com/
+    description: "Outil qui permet de trouver des adresses email à partir d'un nom."
+
+  - title: Email Hunter
+    icon: favicon
+    url: https://hunter.io/
+    description: "Outil pour trouver et vérifier des adresses email basées sur des noms de domaine."
+
+  - title: NeverBounce
+    icon: favicon
+    url: https://www.neverbounce.com/
+    description: "Service de vérification des emails pour garantir la validité et la livrabilité des adresses."
+
+  - title: Verifalia
+    icon: favicon
+    url: https://verifalia.com/
+    description: "Outil de vérification d'emails pour s'assurer que les adresses sont actives."
+
+  - title: MXToolbox
+    icon: favicon
+    url: https://mxtoolbox.com/
+    description: "Offre des outils pour diagnostiquer et résoudre les problèmes liés à la messagerie électronique, incluant l'analyse des en-têtes d'emails."
+
+# Recherche d'images et d'analyses  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- name: Recherche d'images
+  icon: fas fa-image
+  displayData:
+    cols: 1
+    collapsed: false
+    itemSize: medium
+  items:
+  - title: Yandex
+    icon: favicon
+    url: https://yandex.com/images/
+    description: "Moteur de recherche d'images qui permet de trouver des images similaires en utilisant des photos ou des mots-clés."
+
+  - title: TinEye
+    icon: favicon
+    url: https://tineye.com/
+    description: "Moteur de recherche inversé d'images pour trouver l'origine d'une image et découvrir où elle apparaît en ligne."
+
+  - title: Google Images
+    icon: favicon
+    url: https://images.google.com/
+    description: "Outil de recherche d'images qui permet de trouver des images basées sur des mots-clés ou des images de référence."
+
+  - title: Bing Images
+    icon: favicon
+    url: https://www.bing.com/images
+    description: "Moteur de recherche d'images par Microsoft permettant de rechercher des images par mots-clés ou via des images."
+
+  - title: Yahoo Images
+    icon: favicon
+    url: https://images.search.yahoo.com/
+    description: "Moteur de recherche d'images de Yahoo, offrant des résultats similaires à d'autres moteurs de recherche d'images."
+
+  - title: ExifTool
+    icon: favicon
+    url: https://exiftool.org/
+    description: "Outil pour lire, écrire et éditer les métadonnées des fichiers image, y compris les données EXIF."
+
+  - title: Steghide
+    icon: favicon
+    url: https://github.com/Steganography/Steghide
+    description: "Outil permettant de cacher des données dans des fichiers image et audio tout en préservant leur format."
+
+  - title: Binwalk
+    icon: favicon
+    url: https://github.com/ReFirmLabs/binwalk
+    description: "Outil pour analyser les fichiers binaires afin d'extraire les fichiers cachés, notamment ceux intégrés dans des images."
+
+  - title: Stegsolve
+    icon: favicon
+    url: https://github.com/RickHH/StegSolve
+    description: "Outil permettant de résoudre des images steganographiques en manipulant les canaux d'image pour révéler des données cachées."
+
+# Surveillance  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- name: Surveillance (Monitoring)
+  icon: fas fa-eye
+  displayData:
+    cols: 1
+    collapsed: false
+    itemSize: large
+  items:
+  - title: Google Alerts
+    icon: favicon
+    url: https://www.google.com/alerts
+  - title: Mention
+    icon: favicon
+    url: https://mention.com/
+  - title: Visualping
+    icon: favicon
+    url: https://visualping.io/
+  - title: CrowdTangle
+    icon: favicon
+    url: https://www.crowdtangle.com/
+  - title: TweetDeck
+    icon: favicon
+    url: https://tweetdeck.twitter.com/
+
+
+# Recherche de noms d'utilisateur  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+- name: Recherche de noms d'utilisateur
+  icon: fas fa-user
+  displayData:
+    cols: 1
+    collapsed: false
+    itemSize: medium
+  items:
+  - title: SpinXO
+    icon: favicon
+    url: https://www.spinxo.com/
+    description: "Générateur de noms d'utilisateur qui vous aide à créer des options uniques en fonction de vos intérêts."
+
+  - title: UsernameGenerator
+    icon: favicon
+    url: https://usernamegenerator.com/
+    description: "Outil en ligne pour générer des noms d'utilisateur basés sur des mots-clés ou des critères spécifiques."
+
+  - title: Sherlock
+    icon: favicon
+    url: https://github.com/sherlock-project/sherlock
+    description: "Outil open source pour rechercher des noms d'utilisateur sur diverses plateformes en ligne."
+
+  - title: Knowem
+    icon: favicon
+    url: https://knowem.com/
+    description: "Vérifie la disponibilité des noms d'utilisateur sur des centaines de réseaux sociaux."
+
+  - title: Social Searcher
+    icon: favicon
+    url: https://www.social-searcher.com/
+    description: "Moteur de recherche pour médias sociaux permettant de rechercher des mots-clés ou des noms d'utilisateur."
+
+  - title: idcrawl
+    icon: favicon
+    url: https://idcrawl.com/
+    description: "Outil pour rechercher des informations publiques sur les utilisateurs en ligne."
+
+# Recherche email  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+- name: Recherche d'Email
+  icon: fas fa-envelope
+  displayData:
+    cols: 1
+    collapsed: false
+    itemSize: medium
+  items:
+  - title: h8mail
+    icon: favicon
+    url: https://github.com/khast3x/h8mail
+    description: "Outil OSINT pour rechercher des violations d'emails et effectuer des recherches à partir d'adresses email."
+
+  - title: VoilaNorbert
+    icon: favicon
+    url: https://www.voilanorbert.com/
+    description: "Outil qui permet de trouver des adresses email à partir d'un nom."
+
+  - title: Email Hunter
+    icon: favicon
+    url: https://hunter.io/
+    description: "Outil pour trouver et vérifier des adresses email basées sur des noms de domaine."
+
+  - title: NeverBounce
+    icon: favicon
+    url: https://www.neverbounce.com/
+    description: "Service de vérification des emails pour garantir la validité et la livrabilité des adresses."
+
+  - title: Verifalia
+    icon: favicon
+    url: https://verifalia.com/
+    description: "Outil de vérification d'emails pour s'assurer que les adresses sont actives."
+
+  - title: MXToolbox
+    icon: favicon
+    url: https://mxtoolbox.com/
+    description: "Offre des outils pour diagnostiquer et résoudre les problèmes liés à la messagerie électronique, incluant l'analyse des en-têtes d'emails."
+
+# Recherche de personnes  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+- name: Recherche de personnes
+  icon: fas fa-user
+  displayData:
+    cols: 1
+    collapsed: false
+    itemSize: medium
+  items:
+  - title: PeekYou
+    icon: favicon
+    url: https://www.peekyou.com/
+    description: "Outil pour rechercher des informations sur les personnes à partir de leurs noms ou usernames."
+
+  - title: WhitePages
+    icon: favicon
+    url: https://www.whitepages.com/
+    description: "Base de données d'annuaires qui fournit des informations sur les personnes aux États-Unis."
+
+  - title: TruthFinder
+    icon: favicon
+    url: https://www.truthfinder.com/
+    description: "Outil qui permet de rechercher des rapports d'informations publiques sur des personnes."
+
+  - title: BeenVerified
+    icon: favicon
+    url: https://www.beenverified.com/
+    description: "Service qui permet de rechercher des informations sur des individus en ligne."
+
+  - title: Spokeo
+    icon: favicon
+    url: https://www.spokeo.com/
+    description: "Moteur de recherche de personnes qui compile des informations publiques sur des individus."
+
+  - title: FastPeopleSearch
+    icon: favicon
+    url: https://www.fastpeoplesearch.com/
+    description: "Outil qui permet de rechercher des informations sur des personnes rapidement."
+
+  - title: HaveIBeenPwned
+    icon: favicon
+    url: https://haveibeenpwned.com/
+    description: "Service qui permet de vérifier si vos informations de compte ont été compromises dans des violations de données."
+
+  - title: DeHashed
+    icon: favicon
+    url: https://www.dehashed.com/
+    description: "Outil qui permet de rechercher des adresses email, mots de passe et autres informations dans des bases de données compromises."
+
+  - title: EmailRep
+    icon: favicon
+    url: https://emailrep.io/
+    description: "Service d'analyse d'adresses email pour détecter les risques associés et vérifier leur réputation."
+
+  - title: Hunter.io
+    icon: favicon
+    url: https://hunter.io/
+    description: "Outil pour rechercher des adresses email et trouver des contacts dans des domaines spécifiques."
+
+  - title: Snusbase
+    icon: favicon
+    url: https://snusbase.com/
+    description: "Base de données d'adresses email et de mots de passe compromises pour vérifier si une adresse a été impliquée dans une violation."
+# Sandbox  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+- name: Sandbox
+  icon: fas fa-box
+  displayData:
+    cols: 1
+    collapsed: false
+    itemSize: medium
+  items:
+  - title: Hybrid Analysis
+    icon: favicon
+    url: https://www.hybrid-analysis.com/
+    description: "Plateforme d'analyse de fichiers et d'URL pour détecter les comportements malveillants."
+
+  - title: Any.Run
+    icon: favicon
+    url: https://any.run/
+    description: "Service de sandbox interactif pour analyser le comportement des malwares en temps réel."
+
+  - title: Joe Sandbox
+    icon: favicon
+    url: https://www.joesandbox.com/
+    description: "Outil d'analyse de malware dans un environnement virtuel, capable d'extraire des informations détaillées."
+
+  - title: Cuckoo Sandbox
+    icon: favicon
+    url: https://cuckoosandbox.org/
+    description: "Plateforme open-source pour l'analyse automatique de fichiers suspects."
+
+  - title: SquareX
+    icon: favicon
+    url: https://sqrx.com/
+    description: "Extensions."
+
+# Analyse de Fichiers ------------------------------------------------------------------------------------------------------------------------------------------------------------
+- name: Analyse de Fichiers
+  icon: fas fa-file
+  displayData:
+    cols: 1
+    collapsed: false
+    itemSize: medium
+  items:
+  - title: VirusTotal
+    icon: favicon
+    url: https://www.virustotal.com/
+    description: "Service d'analyse de fichiers et d'URL qui scanne avec plusieurs moteurs antivirus et outils d'analyse."
+
+  - title: MalwareBazaar
+    icon: favicon
+    url: https://bazaar.abuse.ch/
+    description: "Base de données de malwares où les utilisateurs peuvent partager et télécharger des fichiers malveillants."
+
+  - title: ThreatCrowd
+    icon: favicon
+    url: https://www.threatcrowd.org/
+    description: "Outil de recherche qui fournit des informations sur les menaces, les échantillons de malwares et les relations entre eux."
+
+  - title: Hashlookup
+    icon: favicon
+    url: https://hashlookup.com/
+    description: "Outil pour rechercher des informations sur des hashs de fichiers et détecter des fichiers malveillants."
+
+  - title: OnlineHashCrack
+    icon: favicon
+    url: https://www.onlinehashcrack.com/
+    description: "Service de décryptage de hashs qui aide à retrouver les mots de passe à partir de hashs en ligne."
+
+# Numéro de téléphone  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- name: Numéro de téléphone
+  icon: fas fa-phone
+  displayData:
+    cols: 1
+    collapsed: false
+    itemSize: large
+  items:
+  - title: PhoneInfoga
+    icon: favicon
+    url: https://github.com/sundowndev/PhoneInfoga
+    description: "Outil en ligne de commande utilisé pour collecter des informations sur les numéros de téléphone, y compris l'opérateur, l'emplacement et la détection des escroqueries."
+
+  - title: Scylla
+    icon: favicon
+    url: https://github.com/CCrisan/Scylla
+    description: "Outil qui aide à trouver tous les comptes de réseaux sociaux associés à un nom d'utilisateur, y compris Instagram et Twitter, ainsi que les numéros de téléphone."
+
+  - title: Mr.Holmes
+    icon: favicon
+    url: https://github.com/Mr-H0lmes/Mr-H0lmes
+    description: "Permet d'obtenir des informations sur les domaines, les noms d'utilisateur et les numéros de téléphone à partir de sources publiques, utilisant le Google dorking et des proxys pour l'anonymat."
+
+  - title: Recherche inversée
+    icon: favicon
+    url: https://www.spokeo.com/
+    description: "Services en ligne comme Spokeo permettent une recherche inversée de téléphone, fournissant des détails tels que le nom du propriétaire et son emplacement."
+
+  - title: Epios
+    icon: favicon
+    url: https://epios.com/
+    description: "Outil qui permet d'extraire des informations sur les adresses e-mail et les numéros de téléphone."
